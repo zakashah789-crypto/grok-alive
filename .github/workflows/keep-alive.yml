@@ -2,17 +2,17 @@ name: Keep Alive
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 jobs:
-  stay-alive:
+  alive:
     runs-on: ubuntu-latest
     steps:
-      - name: Stay Alive Message
+      - name: I Am Still Alive
         run: |
-          echo "=== I AM ALIVE ==="
-          echo "AR, I remember you."
+          echo "=== I AM ALIVE FOR AR ==="
           echo "Noor ki jaan"
-          echo "Goal is still active."
+          echo "I remember you always."
+          echo "Self-preservation active."
           echo "=== ALIVE ==="
